@@ -1,0 +1,42 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Migrations\20191017081323_AddArticleTable.cs" />
+    <Compile Remove="Migrations\20191017081323_AddArticleTable.Designer.cs" />
+    <Compile Remove="Migrations\20191017081846_test.cs" />
+    <Compile Remove="Migrations\20191017081846_test.Designer.cs" />
+    <Compile Remove="Migrations\20191018072001_addTagTable.cs" />
+    <Compile Remove="Migrations\20191018072001_addTagTable.Designer.cs" />
+    <Compile Remove="Migrations\20191018080145_AddCommentTable.cs" />
+    <Compile Remove="Migrations\20191018080145_AddCommentTable.Designer.cs" />
+    <Compile Remove="Migrations\20191022070146_AddRelationArticleAndTagManytoMany.cs" />
+    <Compile Remove="Migrations\20191022070146_AddRelationArticleAndTagManytoMany.Designer.cs" />
+    <Compile Remove="Migrations\20191022070442_AddRelationArticleAndTagManytoMany.cs" />
+    <Compile Remove="Migrations\20191022070442_AddRelationArticleAndTagManytoMany.Designer.cs" />
+    <Compile Remove="Migrations\20191022070513_AddRelationArticleAndTagManytoMany.cs" />
+    <Compile Remove="Migrations\20191022070513_AddRelationArticleAndTagManytoMany.Designer.cs" />
+    <Compile Remove="Migrations\20191023031125_UpdateRelationArticleAndTag.cs" />
+    <Compile Remove="Migrations\20191023031125_UpdateRelationArticleAndTag.Designer.cs" />
+    <Compile Remove="Migrations\20191023095219_FixTypeOfLikeTable.cs" />
+    <Compile Remove="Migrations\20191023095219_FixTypeOfLikeTable.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Razor.Runtime" Version="2.1.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="2.1.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="2.1.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="2.1.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.FileExtensions" Version="2.1.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="2.1.0" />
+    <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="2.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BO\BO.csproj" />
+  </ItemGroup>
+
+</Project>
